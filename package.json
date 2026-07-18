@@ -1,0 +1,19 @@
+{
+  "name": "login-form-learning",
+  "version": "1.0.0",
+  "description": "Educational login form project to learn HTML, CSS, and JavaScript form handling",
+  "main": "index.html",
+  "scripts": {
+    "start": "open index.html"
+  },
+  "keywords": [
+    "learning",
+    "html",
+    "css",
+    "javascript",
+    "form",
+    "validation"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
