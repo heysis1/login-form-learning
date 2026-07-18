@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form - Learning Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <div class="logo">
+                <h1>MyApp Login</h1>
+            </div>
+            
+            <!-- Login Form -->
+            <form id="loginForm" class="login-form">
+                <div class="form-group">
+                    <input 
+                        type="text" 
+                        id="username" 
+                        name="username" 
+                        placeholder="Username or email"
+                        required
+                    >
+                    <span class="error-message" id="usernameError"></span>
+                </div>
+
+                <div class="form-group">
+                    <input 
+                        type="password" 
+                        id="password" 
+                        name="password" 
+                        placeholder="Password"
+                        required
+                    >
+                    <span class="error-message" id="passwordError"></span>
+                </div>
+
+                <button type="submit" class="login-btn">Log In</button>
+            </form>
+
+            <div class="divider">or</div>
+
+            <div class="footer-links">
+                <a href="#forgot">Forgot password?</a>
+                <span class="separator">•</span>
+                <a href="#signup">Sign up</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Message (shows after form submission) -->
+    <div id="successMessage" class="success-message" style="display:none;">
+        <h2>✓ Form Submitted Successfully!</h2>
+        <p>Here's what was captured from the form:</p>
+        <div id="formData"></div>
+        <button onclick="resetForm()">Try Again</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
